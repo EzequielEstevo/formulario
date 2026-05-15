@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulário de contato moderno e interativo com design premium.">
+    <title>Contato | Design Premium</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <main class="container">
+        <header class="perfil">
+            <div class="foto">
+                <img src="img/avatar.png" alt="Foto de Perfil" class="imagem">
+            </div>
+            <h1 class="Ftitulo">Conecte-se</h1>
+            <p class="subtitulo">Preencha os campos abaixo para entrar em contato.</p>
+        </header>
+
+        <section class="Formulário">
+            <form id="contactForm" class="contact-form">
+                <div class="input-group">
+                    <label for="name">Seu Nome</label>
+                    <input type="text" id="name" name="name" required placeholder="Ex: João Silva" autocomplete="name">
+                </div>
+
+                <div class="input-group">
+                    <label for="email">E-mail Profissional</label>
+                    <input type="email" id="email" name="email" required placeholder="exemplo@email.com" autocomplete="email">
+                </div>
+
+                <div class="input-group">
+                    <label for="pergunta">Sua Mensagem</label>
+                    <textarea id="pergunta" name="pergunta" rows="4" placeholder="Como posso ajudar?"></textarea>
+                </div>
+
+                <button type="submit" id="submitBtn">
+                    <span>Enviar Mensagem</span>
+                </button>
+            </form>
+            <div id="success-msg">✓ Mensagem enviada com sucesso!</div>
+        </section>
+    </main>
+
+    <script src="mecanic.js"></script>
+</body>
+
+</html>
